@@ -1,0 +1,18 @@
+<input class="input"
+        type="text"
+        [(ngModel)]="autocompleteInput"
+        id = "addressInput"
+        #addressInput
+        >
+<br/>
+<div *ngIf = "address">
+  <p>
+    <b>Addess</b>: {{address}}
+  </p>
+  <p>
+    <b>Longitude</b>: {{longitude}}
+  </p>
+  <p>
+    <b>Latitude</b>: {{latitude}}
+  </p>
+</div>

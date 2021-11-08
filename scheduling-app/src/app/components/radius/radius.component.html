@@ -1,0 +1,9 @@
+<form [formGroup]="contactForm" (ngSubmit)="submit()">
+    <p>
+        <select formControlName="radius">
+            <option [ngValue]="null" disabled>Select Radius</option>
+            <option *ngFor="let radius of radii" [ngValue]="radius.id">{{radius.name}}</option>
+        </select>
+        <button type="submit">Submit</button>
+    </p>
+</form>
